@@ -17,9 +17,9 @@ Skyra Event Horizon is a modern, responsive, and intelligent event management pl
 
 ## 🧱 Tech Stack
 
-- **Frontend:** React.js, Tailwind CSS, ShadCN UI
+- **Frontend:** React.js, Tailwind CSS
 - **Backend:** Node.js, Express.js
-- **Email Service:** Nodemailer
+- **Email Service:** EmailJS
 - **Version Control:** Git, GitHub
 - **Deployment:**  Netlify (Frontend)
 
