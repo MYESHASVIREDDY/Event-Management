@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #9b87f5;
+  --secondary: #7E69AB;
+  --light-purple: #E5DEFF;
+  --vivid-purple: #8B5CF6;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply text-gray-800;
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold mb-8 font-playfair;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded hover:bg-purple-600 transition-colors inline-block text-center;
+  }
+  
+  .btn-outline {
+    @apply border border-primary text-primary px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors;
+  }
+  
+  .bg-light-purple {
+    @apply bg-[#E5DEFF];
+  }
+  
+  .text-primary {
+    @apply text-[#9b87f5];
+  }
+  
+  .bg-primary {
+    @apply bg-[#9b87f5];
+  }
+  
+  .service-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow;
+  }
+  
+  .service-card-img {
+    @apply w-full h-64 object-cover;
+  }
+  
+  .service-card-body {
+    @apply p-6;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
