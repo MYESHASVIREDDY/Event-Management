@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,8 +7,7 @@ const Carousel = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 2000);
-
+    }, 3000); 
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -21,53 +19,31 @@ const Carousel = ({ images }) => {
     setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
   };
 
+  const currentImage = images[currentIndex];
+
   return (
     <div className="relative h-full w-full overflow-hidden bg-black">
-      {images.map((image, index) => (
-        <div 
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div className="absolute inset-0 bg-black opacity-40"></div>
-          <img 
-            src={image.src} 
-            alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto px-4 text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-playfair">{image.title}</h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">{image.subtitle}</p>
-              <Link to={image.ctaLink} className="btn-primary">
-                {image.cta}
-              </Link>
-            </div>
+      {/* Only render current image */}
+      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100">
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <img
+          src={currentImage.src}
+          alt={`Slide ${currentIndex + 1}`}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="container mx-auto px-4 text-center text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-playfair">{currentImage.title}</h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">{currentImage.subtitle}</p>
+            <Link to={currentImage.ctaLink} className="btn-primary">
+              {currentImage.cta}
+            </Link>
           </div>
         </div>
-      ))}
+      </div>
 
-      {/* Navigation buttons */}
-      {/* <button 
-        className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-2 focus:outline-none"
-        onClick={goToPrevious}
-      >
-        <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button 
-        className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-2 focus:outline-none"
-        onClick={goToNext}
-      >
-        <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button> */}
-
-      {/* Indicators  */}
-       <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
+      {/* Indicators */}
+      <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
         {images.map((_, index) => (
           <button
             key={index}

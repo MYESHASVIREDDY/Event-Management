@@ -123,7 +123,7 @@ const serviceDetails = {
   birthdays: {
     title: "Birthday Party Planning",
     image: "https://i.pinimg.com/736x/f1/70/57/f17057c5c5d8431232a00372e6475666.jpg",
-    backgroundImage: "https://i.pinimg.com/736x/79/b5/48/79b5489f26021dde7ad047fb9ac722a8.jpg",
+    backgroundImage: "",
     description: "Make your birthday celebration unforgettable with our custom party planning services. From intimate gatherings to extravagant celebrations, we create memorable experiences for all ages.",
     features: [
       "Creative theme development and execution",
@@ -953,8 +953,9 @@ const onSubmit = async (data) => {
   setIsSubmitting(true);
   try {
     const formattedData = {
-      name: data.name,
+      user_name: data.user_name,
       phone: data.phone,
+      email: data.email,
       eventType: data.eventType,
       selectedPackage: data.selectedPackage,
       eventDate: data.eventDate ? format(data.eventDate, 'PPP') : 'Not specified',
@@ -1066,7 +1067,27 @@ const onSubmit = async (data) => {
                       <FormMessage />
                     </FormItem>
                   )}
+                  
                 />
+                <FormField
+    control={form.control}
+    name="email"
+    render={({ field }) => (
+      <FormItem>
+        <FormLabel className="text-gray-700 font-medium">Email Address</FormLabel>
+        <FormControl>
+          <Input
+            type="email"
+            placeholder="Enter your email address"
+            {...field}
+            required
+            className="border-purple-200 focus:border-purple-400 focus:ring-purple-400"
+          />
+        </FormControl>
+        <FormMessage />
+      </FormItem>
+    )}
+  />
               </div>
             </div>
 
@@ -1148,7 +1169,7 @@ const onSubmit = async (data) => {
                           onSelect={field.onChange}
                           disabled={(date) => date < new Date()}
                           initialFocus
-                          className="p-3 pointer-events-auto"
+                          className="p-3 pointer-events-auto bg-white rounded-md shadow-md"
                         />
                       </PopoverContent>
                     </Popover>

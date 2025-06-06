@@ -51,7 +51,6 @@ const serviceCategories = [
     link: "/services/babyshowers",
     image: "https://i.pinimg.com/736x/79/4d/f1/794df182f86721165214e32d397a8a66.jpg"
   },
- 
 ];
 
 const Home = () => {
@@ -62,17 +61,19 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="h-screen relative">
-        <Carousel images={carouselImages} />
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-full max-w-2xl px-4">
-          <div className="bg-black bg-opacity-60 backdrop-blur-md text-white text-center py-6 px-6 rounded-2xl shadow-lg animate-fade-in">
-            <h2 className="text-2xl md:text-3xl font-semibold font-playfair mb-2">Your Vision, Our Mission</h2>
-            <p className="text-lg md:text-xl">
-              We specialize in managing, planning, and organizing events from scratch—creating unforgettable experiences for every occasion.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+<section className="h-screen relative">
+  <Carousel images={carouselImages} />
+  
+  <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-2xl px-4 sm:px-6 md:px-8 z-10">
+    <div className="bg-black bg-opacity-60 backdrop-blur-md text-white text-center py-6 px-4 sm:px-6 md:px-8 rounded-2xl shadow-lg animate-fade-in">
+      <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-prose mx-auto">
+        We specialize in managing, planning, and organizing events from scratch—creating unforgettable experiences for every occasion.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Our Services Section */}
       <section className="py-16 bg-light-purple">
