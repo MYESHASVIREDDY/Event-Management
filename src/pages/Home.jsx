@@ -62,17 +62,7 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       {/* Hero Section */}
-<section className="h-screen relative">
-  <Carousel images={carouselImages} />
-  
-  <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-2xl px-4 sm:px-6 md:px-8 z-10">
-    <div className="bg-black bg-opacity-60 backdrop-blur-md text-white text-center py-6 px-4 sm:px-6 md:px-8 rounded-2xl shadow-lg animate-fade-in">
-      <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-prose mx-auto">
-        We specialize in managing, planning, and organizing events from scratch—creating unforgettable experiences for every occasion.
-      </p>
-    </div>
-  </div>
-</section>
+
 
 
       {/* Our Services Section */}
