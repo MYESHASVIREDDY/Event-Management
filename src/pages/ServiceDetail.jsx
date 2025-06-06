@@ -123,7 +123,7 @@ const serviceDetails = {
   birthdays: {
     title: "Birthday Party Planning",
     image: "https://i.pinimg.com/736x/f1/70/57/f17057c5c5d8431232a00372e6475666.jpg",
-    backgroundImage: "",
+    backgroundImage: "https://i.pinimg.com/736x/ab/3f/8f/ab3f8f1078548e4641e51a7f1485e83b.jpg",
     description: "Make your birthday celebration unforgettable with our custom party planning services. From intimate gatherings to extravagant celebrations, we create memorable experiences for all ages.",
     features: [
       "Creative theme development and execution",
@@ -204,7 +204,7 @@ const serviceDetails = {
   corporate: {
     title: "Corporate Event Management",
     image: "https://i.pinimg.com/736x/83/df/1d/83df1d516c0fba80261c19350c2e5a5a.jpg",
-    backgroundImage: "https://i.pinimg.com/736x/73/3b/0e/733b0e4b1e67f4cfb7240927f92b752e.jpg",
+    backgroundImage: "https://i.pinimg.com/736x/e4/74/5e/e4745e6d8b1c5648d9dee75996579f0f.jpg",
     description: "Elevate your company events with our professional corporate event management services. From conferences and meetings to team building activities and company celebrations, we deliver polished, impactful events.",
     features: [
       "Strategic event planning and execution",
@@ -285,8 +285,8 @@ const serviceDetails = {
   },
   college: {
     title: "College Event Production",
-    image: "https://i.pinimg.com/736x/13/9e/e1/139ee17ba0cbc9fd54cec9ce9b6b4cfc.jpg",
-    backgroundImage: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    image: "https://i.pinimg.com/736x/5b/b8/48/5bb848c339ef0185b04c50a4c640e0a0.jpg",
+    backgroundImage: "https://www.shridevidegree.org/wp-content/uploads/2022/12/college-cultural-fest.jpg",
     description: "Our college event production services bring your campus events to life. From cultural festivals and academic conferences to graduation ceremonies, we deliver exceptional experiences for students, faculty, and alumni.",
     features: [
       "Festival and event concept development",
@@ -349,7 +349,7 @@ const serviceDetails = {
     gallery: [
       "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://i.pinimg.com/736x/26/4b/6a/264b6aca2ae6b40abfb720dc787ae2cd.jpg",
       "https://i.pinimg.com/736x/27/2f/60/272f60eae8165346b45ac8da3a218e16.jpg",
       "https://i.pinimg.com/736x/d3/56/63/d3566319fd06a0cf9e7b90e71e78e214.jpg"
     ]
@@ -357,7 +357,7 @@ const serviceDetails = {
   anniversaries: {
     title: "Anniversary Celebrations",
     image: "https://i.pinimg.com/736x/d3/0b/99/d30b99c8c8bbbaf61dfab7878eb6893a.jpg",
-    backgroundImage: "https://i.pinimg.com/736x/c6/40/69/c64069fe181c69d6ea340d61ce2be61f.jpg",
+    backgroundImage: "https://i.pinimg.com/736x/86/4a/40/864a401180db0aa01fafe1f822affc94.jpg",
     description: "Celebrate your love story with our anniversary celebration services. From intimate gatherings to grand milestone celebrations, we create memorable experiences that honor your journey together.",
     features: [
       "Custom anniversary theme development",
@@ -427,7 +427,7 @@ const serviceDetails = {
   babyshowers: {
     title: "Baby Shower Celebrations",
     image: "https://i.pinimg.com/736x/72/f7/61/72f76146d6b9ed04d72a0c509f69dd71.jpg",
-    backgroundImage: "https://i.pinimg.com/736x/b9/46/d6/b946d6e3288ecc27edcf1438aac78f26.jpg",
+    backgroundImage: "https://i.pinimg.com/736x/23/d7/9e/23d79ecd8fa7f5225b44cd786f10b10b.jpg",
     description: "Welcome the new arrival with our beautiful baby shower celebration services. We create sweet and memorable experiences that celebrate this special milestone in your family's journey.",
     features: [
       "Themed decoration and setup",
@@ -486,17 +486,17 @@ const serviceDetails = {
       }
     },
     gallery: [
-      "https://i.pinimg.com/736x/a1/ec/8f/a1ec8f7bb3a97a7a1473b739368369a5.jpg",
+      "https://i.pinimg.com/736x/90/bf/5e/90bf5ef2e175eb7bd7b41d7969d927fa.jpg",
       "https://i.pinimg.com/736x/9a/f7/a5/9af7a523a01a310f035f816b57e00b3d.jpg",
-      "https://i.pinimg.com/736x/c4/97/f3/c497f38285586733a1ba9bc5a5a59390.jpg",
-      "https://i.pinimg.com/736x/49/c3/ac/49c3ac031d1e7a20bc9e00174ba5f627.jpg"
+      "https://i.pinimg.com/736x/70/36/24/703624f0fda6e936f9854264db5065b3.jpg",
+      "https://i.pinimg.com/736x/a1/ec/8f/a1ec8f7bb3a97a7a1473b739368369a5.jpg"
     ]
   },
   
   housewarming: {
     title: "House Warming Celebrations",
     image:"https://i.pinimg.com/736x/49/ee/db/49eedb6fa68f52f23b22e8f593cd092a.jpg",
-    backgroundImage: "https://i.pinimg.com/736x/53/00/5a/53005aeebe6d33753dffae8fa4102953.jpg",
+    backgroundImage: "https://i.pinimg.com/736x/33/75/96/337596a9493f1ee22779b772bf022e8c.jpg",
     description: "Celebrate your new home with our house warming event services. We create warm, welcoming celebrations that mark the beginning of beautiful memories in your new space with family and friends.",
     features: [
       "Traditional and modern ceremony coordination",
@@ -561,9 +561,9 @@ const serviceDetails = {
     ]
   },
   cradleceremony: {
-    title: "Cradle Ceremony (Jatakarma)",
+    title: "Cradle Ceremony",
     image: "https://i.pinimg.com/736x/83/37/9c/83379ccbb966bbb0f5afda1e5421ba21.jpg",
-    backgroundImage: "https://i.pinimg.com/736x/95/9f/c9/959fc9e5dfa190e184048b2aa7929d29.jpg",
+    backgroundImage: "https://i.pinimg.com/736x/2e/62/92/2e6292ed9145e0988b9df4c168f6b0c6.jpg",
     description: "Honor your newborn with our traditional cradle ceremony services. We create sacred, beautiful celebrations that welcome your little one into the world with blessings, traditions, and joyful family gatherings.",
     features: [
       "Traditional ritual coordination and planning",

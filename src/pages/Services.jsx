@@ -28,7 +28,7 @@ const mainServices = [
   {
     title: "College Fests",
     slug: "college",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    image: "https://i.pinimg.com/736x/52/89/f5/5289f57659c0d2352a815219520d5120.jpg",
     features: ["Cultural and technical college festivals with stage setup and entertainment"],
     startingPrice: 197499
   },
@@ -53,7 +53,7 @@ const additionalServices = [
   {
     title: "House Warming Ceremonies",
     slug: "housewarming",
-    image: "https://i.pinimg.com/736x/53/00/5a/53005aeebe6d33753dffae8fa4102953.jpg",
+    image: "https://i.pinimg.com/736x/5c/ea/55/5cea5593007d7fe4a9bffb3761c31520.jpg",
     features: ["Traditional housewarming celebrations with puja arrangements and feast"],
     startingPrice: 25749
   },

@@ -21,8 +21,8 @@ const carouselImages = [
     src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     title: "Elevate Your Corporate Events",
     subtitle: "Professional planning for conferences, meetings, and company celebrations.",
-    cta: "Learn More",
-    ctaLink: "/services/corporate"
+    cta: "Get a Free Quote",
+    ctaLink: "/contact"
   }
 ];
 
