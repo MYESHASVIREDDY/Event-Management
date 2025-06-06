@@ -62,7 +62,7 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       {/* Hero Section */}
-<section className="h-screen relative">
+{/* <section className="h-screen relative">
   <Carousel images={carouselImages} />
   
   <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-2xl px-4 sm:px-6 md:px-8 z-10">
@@ -72,7 +72,7 @@ const Home = () => {
       </p>
     </div>
   </div>
-</section>
+</section> */}
 
 
       {/* Our Services Section */}
