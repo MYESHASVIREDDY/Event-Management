@@ -14,7 +14,7 @@ const mainServices = [
   {
     title: "Birthday Parties",
     slug: "birthdays",
-    image: "https://i.pinimg.com/736x/fd/9c/5e/fd9c5e54c2b1e3b3aeed88508e26a3e4.jpg",
+    image: "https://i.pinimg.com/736x/36/87/39/3687396ec96fdc93e47a65650c42f028.jpg",
     features: ["Themed birthday celebrations with décor, entertainment, and photography"],
     startingPrice: 18749
   },
@@ -60,7 +60,7 @@ const additionalServices = [
   {
     title: "Cradle Ceremonies",
     slug: "cradleceremony",
-    image: "https://i.pinimg.com/736x/eb/5e/97/eb5e978ed35edeb837e66f57d314e3c6.jpg",
+    image: "https://i.pinimg.com/736x/b3/bb/95/b3bb954f4ff08fd9651b087530753fb6.jpg",
     features: ["Beautiful cradle ceremony arrangements with traditional décor and rituals"],
     startingPrice: 22499
   },

@@ -938,6 +938,7 @@ const PackageBookingModal = ({ packageData, serviceName }) => {
     defaultValues: {
       name: '',
       phone: '',
+      email: '',
       eventType: serviceName,
       selectedPackage: packageData.name,
       eventDate: undefined
@@ -953,7 +954,7 @@ const onSubmit = async (data) => {
   setIsSubmitting(true);
   try {
     const formattedData = {
-      user_name: data.user_name,
+      name: data.name,
       phone: data.phone,
       email: data.email,
       eventType: data.eventType,
