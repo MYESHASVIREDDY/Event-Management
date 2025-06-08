@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 Skyra Event Horizon – Smart Event Management Platform
 
 Skyra Event Horizon is a modern, responsive, and intelligent event management platform designed to simplify event planning and booking. Whether it's a wedding, corporate event, birthday, or baby shower, Skyra makes it easy to explore, book, and manage events in real time.
@@ -24,3 +25,5 @@ Skyra Event Horizon is a modern, responsive, and intelligent event management pl
 - **Deployment:**  Netlify (Frontend)
 
 
+=======
+>>>>>>> 3b958aadf6b9773837075ce53225da57bc88faf3
