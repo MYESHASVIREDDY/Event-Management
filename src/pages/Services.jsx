@@ -149,59 +149,60 @@ const Services = () => {
 
       {/* Other Extra Services */}
       <section className="py-16 bg-light-purple">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-3xl text-center font-bold font-playfair mb-12">Additional Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Entertainment",
-                description:
-                  "From live bands to DJs, we provide top-notch entertainment services to keep your guests engaged and entertained.",
-                iconPath:
-                  "M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-              },
-              {
-                title: "Photography",
-                description:
-                  "Capture the best moments with our professional photographers and videographers.",
-                iconPath:
-                  "M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-              },
-               {
-                title: "Decoration Services",
-                description:
-                  "Elegant and thematic decorations to create the perfect ambiance for your event.",
-                iconPath:
-                  "M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"
-  }
-            ].map((extra, i) => (
-              <div
-                key={i}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
-              >
-                <div className="h-16 w-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d={extra.iconPath}
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold mb-4">{extra.title}</h3>
-                <p className="text-gray-600">{extra.description}</p>
-              </div>
-            ))}
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl text-center font-bold font-playfair mb-12">Additional Services</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Entertainment",
+          description:
+            "From live bands to DJs, we provide top-notch entertainment services to keep your guests engaged and entertained.",
+          iconPath:
+            "M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+        },
+        {
+          title: "Photography",
+          description:
+            "Capture the best moments with our professional photographers and videographers.",
+          iconPath:
+            "M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+        },
+        {
+          title: "Decoration Services",
+          description:
+            "Elegant and thematic decorations to create the perfect ambiance for your event.",
+          iconPath:
+            "M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"
+        }
+      ].map((extra, i) => (
+        <div
+          key={i}
+          className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:bg-purple-50 hover:scale-105"
+        >
+          <div className="h-16 w-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <svg
+              className="h-8 w-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={extra.iconPath}
+              />
+            </svg>
           </div>
+          <h3 className="text-xl font-bold mb-4 text-center">{extra.title}</h3>
+          <p className="text-gray-700 text-center">{extra.description}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };

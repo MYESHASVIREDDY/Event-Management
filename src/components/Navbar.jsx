@@ -1,3 +1,4 @@
+
 // import { useState, useEffect } from 'react';
 // import { Link, NavLink } from 'react-router-dom';
 
@@ -20,23 +21,25 @@
 
 //   // Styling
 //   const purpleText = "text-[#6b1e8e]";
-//   const gradientHover = "hover:bg-gradient-to-r hover:from-[#a149d4] hover:via-[#d44fa5] hover:to-[#ff5ca9] hover:bg-clip-text hover:text-transparent";
-//   const gradientButton = "bg-gradient-to-r from-[#a149d4] via-[#d44fa5] to-[#ff5ca9]";
-//   const buttonHover = "hover:bg-[#6b1e8e] hover:from-none hover:via-none hover:to-none";
+//   const gradientHover =
+//     "hover:bg-gradient-to-r hover:from-[#a149d4] hover:via-[#d44fa5] hover:to-[#ff5ca9] hover:bg-clip-text hover:text-transparent";
+//   const gradientButton =
+//     "bg-gradient-to-r from-[#a149d4] via-[#d44fa5] to-[#ff5ca9]";
+//   const buttonHover =
+//     "hover:bg-[#6b1e8e] hover:from-none hover:via-none hover:to-none";
 
 //   return (
 //     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
 //       <div className="container mx-auto px-4 py-3">
 //         <div className="flex justify-between items-center">
-//           <Link to="/" className="flex items-center gap-3 text-2xl md:text-3xl font-bold font-playfair">
+        
+
+//           <Link to="/" className="flex items-center gap-2">
 //   <img
-//     src="skyra.jpg"
+//     src="skyra.png"
 //     alt="Skyra Logo"
-//     className="h-10 w-10 object-contain"
+//     className="h-10 md:h-12 object-contain" // match height of text-2xl to text-3xl
 //   />
-//   <span className="text-[#6b1e8e] hover:bg-gradient-to-r hover:from-[#a149d4] hover:via-[#d44fa5] hover:to-[#ff5ca9] hover:bg-clip-text hover:text-transparent transition-colors duration-300">
-//     Skyra Events
-//   </span>
 // </Link>
 
 
@@ -79,7 +82,11 @@
 //                 strokeLinecap="round"
 //                 strokeLinejoin="round"
 //                 strokeWidth="2"
-//                 d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+//                 d={
+//                   mobileMenuOpen
+//                     ? "M6 18L18 6M6 6l12 12"
+//                     : "M4 6h16M4 12h16M4 18h16"
+//                 }
 //               />
 //             </svg>
 //           </button>
@@ -87,9 +94,11 @@
 //       </div>
 
 //       {/* Mobile Menu */}
-//       <div className={`md:hidden bg-white shadow-lg transition-all duration-300 overflow-hidden ${
-//         mobileMenuOpen ? 'max-h-64' : 'max-h-0'
-//       }`}>
+//       <div
+//         className={`md:hidden bg-white shadow-lg transition-all duration-300 overflow-hidden ${
+//           mobileMenuOpen ? "max-h-64" : "max-h-0"
+//         }`}
+//       >
 //         <div className="container mx-auto px-4 py-2">
 //           <nav className="flex flex-col space-y-4 py-4">
 //             {['/', '/services', '/about-us'].map((path, index) => {
@@ -123,9 +132,9 @@
 
 // export default Navbar;
 
-
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { FaRegCalendarAlt } from 'react-icons/fa'; // Calendar icon
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -145,32 +154,29 @@ const Navbar = () => {
   }, []);
 
   // Styling
-  const purpleText = "text-[#6b1e8e]";
+  const purpleText = "text-[#3C0080]";
   const gradientHover =
     "hover:bg-gradient-to-r hover:from-[#a149d4] hover:via-[#d44fa5] hover:to-[#ff5ca9] hover:bg-clip-text hover:text-transparent";
   const gradientButton =
-    "bg-gradient-to-r from-[#a149d4] via-[#d44fa5] to-[#ff5ca9]";
+    "bg-gradient-to-r from-[#6A11CB] to-[#FF6FD8]";
   const buttonHover =
-    "hover:bg-[#6b1e8e] hover:from-none hover:via-none hover:to-none";
+    "hover:brightness-110";
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md rounded-b-xl">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo + Brand */}
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
               src="skyra.png"
               alt="Skyra Logo"
-              className="h-10 w-10 object-contain"
+              className="h-10 md:h-12 object-contain"
             />
-            <span className="text-2xl md:text-3xl font-bold font-playfair text-[#6b1e8e] hover:bg-gradient-to-r hover:from-[#a149d4] hover:via-[#d44fa5] hover:to-[#ff5ca9] hover:bg-clip-text hover:text-transparent transition-colors duration-300">
-              Skyra Events
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {['/', '/services', '/about-us'].map((path, index) => {
               const labels = ['Home', 'Services', 'About Us'];
               return (
@@ -187,19 +193,20 @@ const Navbar = () => {
             })}
             <Link
               to="/contact"
-              className={`${gradientButton} ${buttonHover} text-white font-medium py-2 px-4 text-sm rounded-full shadow-md transition duration-300`}
+              className={`${gradientButton} ${buttonHover} text-white font-bold py-[10px] px-6 text-[14px] rounded-full shadow-md transition duration-300 flex items-center gap-2 transform hover:scale-105`}
             >
+              <FaRegCalendarAlt className="text-white text-base" />
               Book Now
             </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle Button */}
           <button
             className="md:hidden focus:outline-none"
             onClick={toggleMobileMenu}
           >
             <svg
-              className="h-6 w-6 text-[#6b1e8e]"
+              className="h-6 w-6 text-[#3C0080]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -244,9 +251,10 @@ const Navbar = () => {
             })}
             <Link
               to="/contact"
-              className={`${gradientButton} ${buttonHover} text-white font-medium py-2 px-4 text-sm rounded-full text-center shadow-md transition duration-300`}
+              className={`${gradientButton} ${buttonHover} text-white font-bold py-[10px] px-6 text-[14px] rounded-full shadow-md transition duration-300 flex items-center gap-2 justify-center transform hover:scale-105`}
               onClick={() => setMobileMenuOpen(false)}
             >
+              <FaRegCalendarAlt className="text-white text-base" />
               Book Now
             </Link>
           </nav>
