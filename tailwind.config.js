@@ -13,6 +13,9 @@ export default {
         "light-purple": "#E5DEFF",
         "vivid-purple": "#8B5CF6",
       },
+    
+
+
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],
       },

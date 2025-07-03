@@ -114,14 +114,20 @@ const Services = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-light-purple py-24 md:py-32 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair mb-6">Our Skyra Event Services</h1>
-          <p className="text-2xl max-w-3xl mx-auto text-gray-700">
-            From weddings to corporate gatherings, we offer comprehensive event planning and management services tailored to your unique needs and vision.
-          </p>
-        </div>
-      </section>
+<section className="bg-light-purple py-24 md:py-32 text-center">
+  <div className="container mx-auto px-4">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair mb-6">
+      Our Skyra Event Services
+    </h1>
+    <p className="text-xl max-w-3xl mx-auto text-gray-700">
+      From weddings to corporate gatherings, we offer comprehensive event planning and management services tailored to your unique needs and vision.
+    </p>
+  </div>
+</section>
+
+
+
+
 
       {/* Main Services Section */}
       <section className="py-16">

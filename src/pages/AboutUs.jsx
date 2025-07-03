@@ -11,14 +11,21 @@ const AboutUs = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-light-purple py-20 md:py-28">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-playfair">About Us</h1>
-          <p className="text-xl max-w-3xl mx-auto text-gray-700">
-            Crafting unforgettable experiences with heart, vision, and precision.
-          </p>
-        </div>
-      </section>
+<section className="bg-light-purple py-24 md:py-32">
+  <div className="container mx-auto px-4 text-center">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-playfair">
+      About Us
+    </h1>
+    <p className="text-xl max-w-3xl mx-auto text-gray-700">
+      Crafting unforgettable experiences with heart, vision, and precision.
+    </p>
+  </div>
+</section>
+
+
+
+
+      
 
       {/* Our Story */}
       <section className="py-14">

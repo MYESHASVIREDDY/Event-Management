@@ -219,7 +219,8 @@ const Footer = () => {
 
           {/* Bottom Section */}
           <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
-            <p>&copy; {currentYear} Skyra Events. All rights reserved.</p>
+            {/* <p>&copy; {currentYear} Skyra Events. All rights reserved.</p> */}
+            <p> copyright @skyraevents. All Rights Reserved.</p>
             <a
               href="#"
               onClick={(e) => {
