@@ -115,7 +115,7 @@ const Contact = () => {
       <section className="bg-light-purple py-24 md:py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-playfair">Contact Us</h1>
-          <p className="text-xl max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto text-gray-700 font-sans">
             We'd love to hear from you! Reach out to discuss your event needs, request a quote, or schedule a consultation.
           </p>
         </div>

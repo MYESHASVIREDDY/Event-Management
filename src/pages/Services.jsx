@@ -119,7 +119,7 @@ const Services = () => {
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-playfair mb-6">
       Our Skyra Event Services
     </h1>
-    <p className="text-xl max-w-3xl mx-auto text-gray-700">
+    <p className="text-xl max-w-3xl mx-auto text-gray-700 font-sans">
       From weddings to corporate gatherings, we offer comprehensive event planning and management services tailored to your unique needs and vision.
     </p>
   </div>

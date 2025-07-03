@@ -16,7 +16,7 @@ const AboutUs = () => {
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-playfair">
       About Us
     </h1>
-    <p className="text-xl max-w-3xl mx-auto text-gray-700">
+    <p className="text-xl max-w-3xl mx-auto text-gray-700 font-sans">
       Crafting unforgettable experiences with heart, vision, and precision.
     </p>
   </div>
