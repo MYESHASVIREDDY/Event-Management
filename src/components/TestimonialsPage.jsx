@@ -196,11 +196,22 @@ const TestimonialsPage = () => {
               <input type="email" name="email" placeholder="Email" className="p-3 border rounded w-full" required />
               <select name="event_type" className="p-3 border rounded w-full" required>
                 <option value="">Type of Event</option>
-                <option>Wedding</option>
-                <option>Birthday</option>
-                <option>Baby Shower</option>
-                <option>Cradle Ceremony</option>
-                <option>Others</option>
+               
+  <option>Weddings</option>
+  <option>Birthdays & Private Parties</option>
+  <option>Haldi</option>
+  <option>Baby Showers</option>
+  <option>Engagement</option>
+  <option>Sangeet</option>
+  <option>Corporate Events</option>
+  <option>House Warming</option>
+  <option>Cradle Ceremony</option>
+  <option>Dhoti & Half Saree</option>
+  <option>Festival Decor Events</option>
+  <option>Pre-Wedding Shoots</option>
+  <option>Anniversary</option>
+
+
               </select>
               <input type="date" name="event_date" className="p-3 border rounded w-full" required />
             </div>

@@ -239,7 +239,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
-            <p>© {currentYear} Skyra Events. All Rights Reserved.</p>
+            <p>copyright@skyraevents. All right reserved</p>
             <div className="flex gap-2">
               <button onClick={() => setTermsModalOpen(true)} className="hover:text-primary underline">Terms & Conditions</button>
               <span>.</span>
