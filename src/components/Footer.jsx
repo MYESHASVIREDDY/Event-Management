@@ -308,26 +308,146 @@ const Footer = () => {
 )}
 
 
-      {privacyModalOpen && (
+  {privacyModalOpen && (
   <Modal onClose={() => setPrivacyModalOpen(false)} title="Privacy Policy">
-    <div className="whitespace-pre-wrap text-sm text-gray-800">
-      <ul className="list-decimal list-inside text-purple-700">
-        <li><strong>Definitions</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Personal Information, Sensitive Data, Processing definitions.</li></ul></li>
-        <li><strong>Information We Collect</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Details you provide (contact, event info, billing).</li><li>Automatically collected data (IP, browser, usage).</li><li>From third parties (social media, payment partners).</li></ul></li>
-        <li><strong>Purpose of Data Collection</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Provide services, improve experience, comply with laws.</li><li>Send updates, promotions (opt-out available).</li></ul></li>
-        <li><strong>Data Sharing & Disclosure</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Not sold. Shared as necessary with staff, vendors, authorities.</li></ul></li>
-        <li><strong>Data Retention</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Retained until 12 months post-event or per regulations.</li></ul></li>
-        <li><strong>Data Security</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Encryption, secure servers, access controls used.</li><li>No method fully secure.</li></ul></li>
-        <li><strong>Cookies & Tracking</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Used for analytics and preferences.</li><li>Can disable but may impact functionality.</li></ul></li>
-        <li><strong>Your Rights</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Access, update, delete your data.</li><li>Withdraw consent anytime.</li><li>Email info@skyraevents.com to exercise rights.</li></ul></li>
-        <li><strong>Children’s Privacy</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>No intentional collection from minors.</li><li>Contact us for removal if needed.</li></ul></li>
-        <li><strong>Third-Party Links</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>External sites not covered by this policy.</li></ul></li>
-        <li><strong>Policy Updates</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>Posted on website with effective date.</li></ul></li>
-        <li><strong>Contact Us</strong><ul className="list-disc list-inside ml-4 text-gray-800"><li>📧 info@skyraevents.com | 📞 +91-9010875478 | 🌐 skyraevents.netlify.app</li></ul></li>
-      </ul>
+    <div className="overflow-y-auto max-h-[70vh] px-4 text-sm text-gray-800 leading-relaxed space-y-4">
+      <p><strong>Effective Date:</strong> 7th July 2025</p>
+
+      <p>
+        Skyra Events (“Company,” “we,” “us,” or “our”) values and respects your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you interact with us through our website <a href="https://skyraevents.netlify.app" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">https://skyraevents.netlify.app</a>, engage our services, attend our events, or communicate with our team.
+      </p>
+
+      <p>By accessing our website or using our services, you consent to the practices described in this Privacy Policy.</p>
+
+      <ol className="list-decimal pl-6 space-y-2">
+        <li>
+          <strong>Definitions</strong>
+          <ul className="list-disc pl-6">
+            <li><strong>Personal Information:</strong> Any information that identifies you as an individual, such as your name, phone number, email address, etc.</li>
+            <li><strong>Sensitive Personal Data:</strong> Includes financial data, health-related information, or any other data protected under applicable privacy laws.</li>
+            <li><strong>Processing:</strong> Any operation performed on personal data, such as collection, recording, organization, structuring, storage, use, or deletion.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Information We Collect</strong>
+          <ul className="list-disc pl-6">
+            <li><strong>2.1 Information You Provide to Us</strong>
+              <ul className="list-disc pl-6">
+                <li>Full name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Postal address</li>
+                <li>Event-related information (e.g., event type, date, venue)</li>
+                <li>Company name (if applicable)</li>
+                <li>Billing and payment details</li>
+                <li>Preferences, reviews, or feedback</li>
+                <li>Documents, images, and media shared for planning or promotional use</li>
+              </ul>
+            </li>
+            <li><strong>2.2 Information We Automatically Collect</strong>
+              <ul className="list-disc pl-6">
+                <li>IP address</li>
+                <li>Browser type and version</li>
+                <li>Device type and operating system</li>
+                <li>Website usage data (pages visited, time spent, etc.)</li>
+              </ul>
+            </li>
+            <li><strong>2.3 Information from Third Parties</strong>
+              <ul className="list-disc pl-6">
+                <li>Social media platforms (when you interact with our content)</li>
+                <li>Payment gateways</li>
+                <li>Advertising and marketing partners</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Purpose of Data Collection</strong>
+          <ul className="list-disc pl-6">
+            <li>To plan, manage, and execute your events effectively</li>
+            <li>To respond to your inquiries or requests</li>
+            <li>To process transactions and send invoices</li>
+            <li>To send service-related updates, promotions, or newsletters (opt-out available)</li>
+            <li>To improve our services, marketing strategies, and customer experience</li>
+            <li>To comply with applicable legal obligations</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Data Sharing and Disclosure</strong>
+          <ul className="list-disc pl-6">
+            <li>With our employees, trusted contractors, or vendors working on your event</li>
+            <li>With payment gateways or processors for billing purposes</li>
+            <li>With law enforcement, regulatory authorities, or legal advisors if required by law or to defend legal rights</li>
+            <li>With third-party platforms (such as email marketing or CRM tools) for service-related communication</li>
+          </ul>
+          <p>All third parties are required to handle your data in accordance with this policy and applicable data protection laws.</p>
+        </li>
+
+        <li>
+          <strong>Data Retention</strong>
+          <ul className="list-disc pl-6">
+            <li>Data is retained until the event is completed plus 12 months for reference, feedback, or legal compliance</li>
+            <li>Financial records are retained in accordance with tax and accounting regulations</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Data Security</strong>
+          <p>We implement appropriate administrative, technical, and physical safeguards. This includes secure servers, encryption, access control, and audits. However, no method is 100% secure.</p>
+        </li>
+
+        <li>
+          <strong>Cookies & Tracking Technologies</strong>
+          <ul className="list-disc pl-6">
+            <li>Analyze traffic and performance</li>
+            <li>Remember your preferences and settings</li>
+            <li>Enhance your user experience</li>
+          </ul>
+          <p>You may disable cookies via browser settings, though some features may not work properly.</p>
+        </li>
+
+        <li>
+          <strong>Your Rights</strong>
+          <ul className="list-disc pl-6">
+            <li>Access and review your personal information</li>
+            <li>Correct or update inaccurate data</li>
+            <li>Withdraw your consent at any time</li>
+            <li>Request deletion of your personal information</li>
+            <li>Opt out of non-essential communications</li>
+          </ul>
+          <p>To exercise your rights, contact us at <a href="mailto:info@skyraevents.com" className="text-blue-600">info@skyraevents.com</a>.</p>
+        </li>
+
+        <li>
+          <strong>Children's Privacy</strong>
+          <p>Our services are not intended for individuals under 18. If a minor submitted data, please contact us to remove it.</p>
+        </li>
+
+        <li>
+          <strong>Third-Party Links</strong>
+          <p>We are not responsible for the privacy practices of external websites. Review their policies before sharing data.</p>
+        </li>
+
+        <li>
+          <strong>Policy Updates</strong>
+          <p>We may update this policy. Continued use of our services implies your acceptance of changes.</p>
+        </li>
+
+        <li>
+          <strong>Contact Us</strong>
+          <ul className="list-disc pl-6">
+            <li>📧 Email: <a href="mailto:info@skyraevents.com" className="text-blue-600">info@skyraevents.com</a></li>
+            <li>📞 Phone: +91-9010875478</li>
+            <li>🌐 Website: <a href="https://skyraevents.netlify.app" className="text-blue-600" target="_blank" rel="noopener noreferrer">https://skyraevents.netlify.app</a></li>
+          </ul>
+        </li>
+      </ol>
     </div>
   </Modal>
-) }
+)}
 
     </>
   );
