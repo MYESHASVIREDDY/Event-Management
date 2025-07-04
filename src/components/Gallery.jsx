@@ -158,71 +158,25 @@ const galleryData = {
 //   const categories = Object.keys(galleryData);
 //   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 //   const [selectedImage, setSelectedImage] = useState(null);
-//   const openLightbox = (img) => setSelectedImage(img);
-//   const closeLightbox = () => setSelectedImage(null);
-//   return (
-//     <div className="pt-24 pb-16 px-4 sm:px-6 md:px-16 bg-[#E6DFFF]"> {/* Light purple background */}
-//   <h1 className="text-5xl font-bold text-center text-black font-playfair mb-8">
-//   Event Moments
-// </h1>
 
-
-//   {/* Category Navigation */}
-//   <div className="flex flex-wrap justify-center gap-3 my-6">
-//     {categories.map((category) => (
-//       <button
-//         key={category}
-//         onClick={() => setSelectedCategory(category)}
-//         className={`px-4 py-2 rounded-full border ${
-//           selectedCategory === category
-//             ? 'bg-[#e6d6f9] text-[#00000] font-semibold'
-//             : 'bg-white text-gray-700'
-//         } hover:bg-[#e6d6f9] transition`}
-//       >
-//         {category}
-//       </button>
-//     ))}
-//   </div>
-// <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-//         {galleryData[selectedCategory].map((img, idx) => (
-//           <div
-//             key={idx}
-//             className="overflow-hidden rounded-xl shadow-md cursor-pointer transform transition duration-300 hover:scale-105"
-//             onClick={() => openLightbox(img)}
-//           >
-//             <img
-//               src={img}
-//               alt={`${selectedCategory} ${idx + 1}`}
-//               className="w-full h-60 object-cover"
-//             />
-//           </div>
-//         ))}
-//       </div>
-//       {/* Modal Viewer */}
-//       {selectedImage && <Modal imgSrc={selectedImage} onClose={closeLightbox} />}
-//     </div>
-//   );
-// };
-// export default Gallery;
-// const Gallery = () => {
-//   const categories = Object.keys(galleryData);
-//   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
-//   const [selectedImage, setSelectedImage] = useState(null);
 //   const openLightbox = (img) => setSelectedImage(img);
 //   const closeLightbox = () => setSelectedImage(null);
 
 //   return (
-//     <div className="pt-24 pb-16 px-4 sm:px-6 md:px-16 bg-[#E6DFFF]">
-//       <div className="text-center">
-//         <h1 className="text-5xl font-bold font-playfair text-black">Event Moments</h1>
-//         <p className="text-xl text-gray-700 mt-2 italic">
+//     <div className="bg-[#E6DFFF] py-24 md:py-32">
+//       {/* Heading */}
+//       <div className="container mx-auto px-4 text-center">
+//         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-playfair text-black">
+//           Event Moments
+//         </h1>
+//         <p className="text-xl max-w-3xl mx-auto text-gray-700 font-sans">
 //           Cherished Celebrations Captured Beautifully
 //         </p>
 //       </div>
 
-//       {/* Scrollable Category Tags */}
-//       <div className="mt-8 overflow-x-auto whitespace-nowrap scrollbar-hide">
-//         <div className="inline-flex space-x-3 px-2">
+//       {/* Category Buttons */}
+//       <div className="mt-8 overflow-x-auto whitespace-nowrap scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+//         <div className="inline-flex space-x-3 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
 //           {categories.map((category) => (
 //             <button
 //               key={category}
@@ -230,8 +184,8 @@ const galleryData = {
 //               className={`px-4 py-2 rounded-full transition duration-300 border shadow-sm text-sm sm:text-base
 //                 ${selectedCategory === category
 //                   ? 'bg-gradient-to-r from-pink-400 to-purple-500 text-white font-bold shadow-lg'
-//                   : 'bg-white text-gray-700 hover:bg-purple-100'}
-//               `}
+//                   : 'bg-white text-gray-700 hover:bg-purple-100'}`}
+//               style={{ WebkitAppearance: 'none' }}
 //             >
 //               {category}
 //             </button>
@@ -240,7 +194,7 @@ const galleryData = {
 //       </div>
 
 //       {/* Gallery Grid */}
-//       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+//       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-6 md:px-16">
 //         {galleryData[selectedCategory].map((img, idx) => (
 //           <div
 //             key={idx}
@@ -263,7 +217,6 @@ const galleryData = {
 // };
 
 // export default Gallery;
-
 const Gallery = () => {
   const categories = Object.keys(galleryData);
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
@@ -284,9 +237,26 @@ const Gallery = () => {
         </p>
       </div>
 
-      {/* Category Buttons */}
-      <div className="mt-8 overflow-x-auto whitespace-nowrap scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-        <div className="inline-flex space-x-3 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
+      {/* Category Filter (Dropdown for mobile, buttons for desktop) */}
+      <div className="mt-10 px-4 sm:px-6 md:px-16">
+        {/* Mobile Dropdown */}
+        <div className="block sm:hidden mb-6">
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="w-full border rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300"
+          >
+            <option disabled>Filter by</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Desktop Buttons */}
+        <div className="hidden sm:flex flex-wrap gap-3 justify-center">
           {categories.map((category) => (
             <button
               key={category}
@@ -295,7 +265,6 @@ const Gallery = () => {
                 ${selectedCategory === category
                   ? 'bg-gradient-to-r from-pink-400 to-purple-500 text-white font-bold shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-purple-100'}`}
-              style={{ WebkitAppearance: 'none' }}
             >
               {category}
             </button>
